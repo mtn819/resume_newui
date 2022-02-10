@@ -1,0 +1,17 @@
+.stamp {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 1rem;
+    width: fit-content;
+}
+
+.stamp > img {
+    width: 2rem;
+    height: 2rem;
+    margin: .4rem;
+}
+
+.stamp > hgroup {
+    font-size: .7rem;
+}

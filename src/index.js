@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import '@picocss/pico/css/pico.min.css';
-import './index.css';
+import './custom.css';
 import reportWebVitals from './reportWebVitals';
 import Router from './Router';
 
