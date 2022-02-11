@@ -1,5 +1,4 @@
-import React from 'react'
-import logo from './res/logo.svg';
+import React from 'react';
 import styles from './Login.module.css';
 import Stamp from '../../components/Stamp/Stamp';
 
