@@ -1,0 +1,62 @@
+.editor {
+    max-width: 600px;
+    margin: auto;
+}
+
+/*
+POSITIONS
+*/
+
+.positions {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.positions > * {
+    width: 30%;
+    margin: .4rem 0;
+}
+
+.positions__name {
+    margin: auto;
+    display: block;
+    width: fit-content;
+}
+
+.positions__edit {
+    margin: auto;
+    display: block;
+    width: fit-content;
+    color: var(--primary);
+}
+
+.positions__edit:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.positions__new {
+    text-align: center;
+    color: var(--primary);
+}
+
+/*
+MODAL
+*/
+
+.modal__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal__x {
+    color: var(--primary);
+    transition: color .3s;
+}
+
+.modal__x:hover {
+    color: red;
+    cursor: pointer;
+    font-weight: bolder;
+}

@@ -5,7 +5,7 @@ import styles from './MainLayout.module.css';
 
 function MainLayout({ children }) {
     return <>
-        <a href="/login" className={styles.signOut}>Sign Out &rarr;</a>
+        <a href="/login" className={styles.signOut}><small>Sign Out &rarr;</small></a>
 
         <header className={styles.header}>
             <Link to="/"><Stamp /></Link>
@@ -22,11 +22,11 @@ function MainLayout({ children }) {
         {children}
 
         <footer className={styles.footer}>
-            <a href="#">Terms of Service</a>
+            <a href="/">Terms of Service</a>
             ·
-            <a href="#">Help</a>
+            <a href="/">Help</a>
             ·
-            <a href="#">Privacy Policy</a>
+            <a href="/">Privacy Policy</a>
         </footer>
 
     </>

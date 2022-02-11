@@ -1,5 +1,6 @@
 .stamp {
     display: flex;
+    transform: translateX(-2rem);
 }
 
 .stamp > img {

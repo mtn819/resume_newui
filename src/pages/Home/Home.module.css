@@ -1,0 +1,55 @@
+.home {
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+}
+
+/*
+NEWS
+*/
+.news__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news__x {
+    transition: color .3s;
+    color: var(--primary);
+}
+
+.news__x:hover {
+    color: red;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+/*
+QUICKSTART
+*/
+
+
+.quickstart__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quickstart__x {
+    transition: color .3s;
+    color: var(--primary);
+}
+
+.quickstart__x:hover {
+    color: red;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+/*
+POSITIONS
+*/
+
+.positions__seeMore {
+    width: fit-content;
+}
