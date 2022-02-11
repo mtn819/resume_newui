@@ -1,11 +1,9 @@
-import React from 'react';
-import Stamp from '../../components/Stamp/Stamp';
-import styles from "./Home.module.css";
+import React from 'react'
 
 function Home() {
-    return <main className={styles.home}>
-        
-    </main>;
+  return (
+    <div>Home</div>
+  )
 }
 
-export default Home;
+export default Home

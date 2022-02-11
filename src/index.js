@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './custom.css';
 import reportWebVitals from './reportWebVitals';
 import Router from './Router';
+import '@picocss/pico/css/pico.classless.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
