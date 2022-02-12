@@ -31,35 +31,6 @@ function Home() {
     return <MainLayout>
         <main className={styles.home}>
 
-            {/**NEWS */}
-            {state.news
-                ? <article className={styles.news}>
-                    <header className={styles.news__header}>
-                        <strong>News</strong>
-                        <div
-                            className={styles.news__x}
-                            onClick={() => setState({
-                                ...state,
-                                news: false,
-                            })}
-                        >
-                            &#10005;
-                        </div>
-                    </header>
-
-                    {state.articles.length === 0
-                        ? <p aria-busy="true"></p>
-                        : state.articles
-                            .map(a => <article key={a.TITLE}>
-                                <strong>{new Date(a.DATE).toDateString()}</strong>
-                                <h2>{a.TITLE}</h2>
-                                <p>{a.BRIEF}</p>
-
-                                <a href={a.LINK} target="_blank" rel="noreferrer"><small>&#128279;More</small></a>
-                            </article>)}
-                </article>
-                : ''}
-
             {/**QUICKSTART */}
             {state.quickstart
                 ? <article className={styles.quickstart}>
@@ -111,6 +82,34 @@ function Home() {
                     </details>)}
             </article>
 
+            {/**NEWS */}
+            {state.news
+                ? <article className={styles.news}>
+                    <header className={styles.news__header}>
+                        <strong>News</strong>
+                        <div
+                            className={styles.news__x}
+                            onClick={() => setState({
+                                ...state,
+                                news: false,
+                            })}
+                        >
+                            &#10005;
+                        </div>
+                    </header>
+
+                    {state.articles.length === 0
+                        ? <p aria-busy="true"></p>
+                        : state.articles
+                            .map(a => <article key={a.TITLE}>
+                                <strong>{new Date(a.DATE).toDateString()}</strong>
+                                <h2>{a.TITLE}</h2>
+                                <p>{a.BRIEF}</p>
+
+                                <a href={a.LINK} target="_blank" rel="noreferrer"><small>&#128279;More</small></a>
+                            </article>)}
+                </article>
+                : ''}
         </main>
     </MainLayout>
 }
